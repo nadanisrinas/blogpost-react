@@ -5,9 +5,11 @@ import "../assets/scss/BlogPost.scss"
 const BlogPost = (props) => {
     const [title,setTitle] = useState(props.posts.title);
     const [body,setBody] = useState(props.posts.body);
+    const [id,setId] = useState(props.posts.id); 
     useEffect(()=>{
         setTitle(props.posts.title);
-        setBody(props.posts.body)
+        setBody(props.posts.body);
+        setId(props.posts.id);
     });
     return(
         <Fragment>
@@ -21,7 +23,7 @@ const BlogPost = (props) => {
                         <p className="card-text">{props.posts.body}</p>
                         <div className="blog-post__btn">
                             <a href="#" className="btn blog-post__btn-remove" onClick={() => props.remove(props.posts.id)}>Remove</a>
-                            <a href="#" className="btn blog-post__btn-edit" onClick={() => props.edit({title,body})}>Edit</a>
+                            <a href="#" className="btn blog-post__btn-edit" onClick={() => props.edit({id,title,body})}>Edit</a>
                         </div>
                     </div>
                 </div>
