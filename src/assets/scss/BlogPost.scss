@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+.blog-post{
+    &-img{
+        width: 100%;
+        height: 100%;
+    }
+    &__btn{
+        width: 100%;
+        &-remove{
+            width: 100px;
+            background-color: #63cdda;
+            color: #000;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-edit{
+            width: 100px;
+            margin-left: 1%;
+            background-color: #f7d794;
+            color: #000;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

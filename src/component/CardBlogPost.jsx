@@ -1,4 +1,5 @@
 import React from "react"
+import "../assets/scss/CardBlogPost.scss"
 
 const CardBlogPost = (props) => {
     return(
