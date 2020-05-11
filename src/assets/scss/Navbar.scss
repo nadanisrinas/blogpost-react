@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
+.section-nav{
+    background-color: #63cdda;
+    &-logo{
+        color: #00259e;
+        font-size: 20px;
+    }
+    &-link{
+        color: #000;
+        font-size: 14px;
+    }
+}
